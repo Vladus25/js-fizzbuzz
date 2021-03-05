@@ -2,11 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Gioco di numeri</title>
+    <style>
+      body{
+        background-color: rgb(209, 136, 100);
+      }
+      .contenitore{
+        text-align: center;
+        color: rgb(83, 12, 0);
+      }
+    </style>
+
   </head>
   <body>
 
+    <h1 class="contenitore" id="fizz"></h1>
+    <h1 class="contenitore" id="buzz"></h1>
+    <h1 class="contenitore" id="fizzbuzz"></h1>
+
     <script>
+
+       document.getElementById('fizz').innerHTML = 'Tutti numeri che si dividono per 3 compare la scritta: (Fizz)';
+       document.getElementById('buzz').innerHTML = 'Tutti numeri che si dividono per 5 compare la scritta: (Buzz)';
+       document.getElementById('fizzbuzz').innerHTML = 'Tutti numeri che si dividono per 3 e per 5 compare la scritta: (fizzBuzz)';
 
       for (var i = 1; i < 101; i++) {
 
